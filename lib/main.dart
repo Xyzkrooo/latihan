@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/page/home_page.dart';
 import 'package:myapp/page/flora_page.dart';
 import 'package:myapp/page/fauna_page.dart';
+import 'package:myapp/page/profile_page.dart';
 
 
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/home': (context)=> HomePage(),
         '/flora': (context)=> ListFlora(),
         '/fauna': (context)=> ListFauna(),
+        '/profile': (context) => ProfileScreen(),
       },
       initialRoute: '/home',
       title: 'Flutter Demo',

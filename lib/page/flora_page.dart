@@ -5,9 +5,9 @@ class ListFlora extends StatelessWidget {
 
   final List<Map<String, dynamic>> floraData = [
     {
-      "nama": "Ubud",
-      "jenis": "Flora Hutan Hujan",
-      "image": "assets/images/ubud.jpg",
+      "nama": "Bunga bangkai",
+      "nama_ilmiah": "Amorphophallus titanum",
+      "image": "assets/images/bangkai.jpg",
       "gallery": [
         "assets/images/ubud.jpg",
         "assets/images/ubud2.jpg",
@@ -16,26 +16,26 @@ class ListFlora extends StatelessWidget {
       "desc": "Ubud adalah sebuah destinasi wisata populer di Bali yang terkenal dengan seni, budaya, dan alam yang indah. Terletak di antara sawah dan jurang yang curam, Ubud menawarkan pengalaman yang tak terlupakan bagi wisatawan."
     },
     {
-      "nama": "Nusa Penida",
-      "jenis": "Bali",
-      "image": "assets/images/nusapenida.jpg",
+      "nama": " Sawo Kecik",
+      "nama_ilmiah": "Manilkara kauki",
+      "image": "assets/images/sawo.jpg",
       "gallery": [
         "assets/images/nusapenida1.jpg",
         "assets/images/nusapenida2.jpg",
         "assets/images/nusapenida3.jpg"
       ],
-      "desc": "Nusa Penida adalah sebuah pulau kecil di sebelah tenggara Bali, terkenal dengan pantai yang indah, tebing-tebing yang menakjubkan, dan kehidupan bawah laut yang luar biasa. Tempat ini ideal untuk snorkeling dan diving."
+      "desc": "Sawo kecik atau Sawo jawa adalah sejenis tanaman penghasil buah pangan anggota suku sawo-sawoan atau Sapotaceae. Tumbuhan berbentuk pohon ini biasanya berfungsi sebagai tanaman hias pekarangan dan pelindung. Pohon ini menyukai dataran rendah hingga sedang."
     },
     {
-      "nama": "Pantai Kuta",
-      "jenis": "Bali",
-      "image": "assets/images/kuta.jpg",
+      "nama": "Bunga raflesia",
+      "nama_ilmiah": "Rafflesia",
+      "image": "assets/images/raflesia.jpg",
       "gallery": [
         "assets/images/kuta1.jpg",
         "assets/images/kuta2.jpg",
         "assets/images/kuta3.jpg"
       ],
-      "desc": "Pantai Kuta adalah salah satu pantai paling terkenal di Bali, dikenal dengan pasir putihnya yang lembut, ombak yang cocok untuk berselancar, dan pemandangan matahari terbenam yang menakjubkan. Kuta juga menawarkan berbagai fasilitas hiburan malam."
+      "desc": "Rafflesia atau puspa nusa adalah sebuah genus tumbuhan berbunga yang semua spesiesnya hidup sebagai parasit. Anatomi tumbuhan pada Rafflesia tidak lengkap. Organ tubuh dari Rafflesia hanya berbentuk bunga yang mekar atau kuncup saja. Rafflesia tidak memiliki bagian daun, batang, dan akar"
     }
   ];
 
@@ -66,7 +66,7 @@ class ListFlora extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => DetailFlora(
                         nama: floraData[index]["nama"],
-                        jenis: floraData[index]["jenis"],
+                        jenis: floraData[index]["nama_ilmiah"],
                         image: floraData[index]["image"],
                         gallery: floraData[index]["gallery"],
                         desc: floraData[index]["desc"],

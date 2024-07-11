@@ -7,7 +7,7 @@ class ListFauna extends StatelessWidget {
     {
       "nama": "Harimau Sumatra",
       "jenis": "Mamalia",
-      "image": "assets/images/ubud.jpg",
+      "image": "assets/images/harimau.jpg",
       "gallery": [
         "assets/images/ubud.jpg",
         "assets/images/ubud2.jpg",
@@ -18,7 +18,7 @@ class ListFauna extends StatelessWidget {
     {
       "nama": "Komodo",
       "jenis": "Reptil",
-      "image": "assets/images/nusapenida.jpg",
+      "image": "assets/images/komodo.jpg",
       "gallery": [
         "assets/images/nusapenida1.jpg",
         "assets/images/nusapenida2.jpg",
@@ -29,7 +29,7 @@ class ListFauna extends StatelessWidget {
     {
       "nama": "Orang utan",
       "jenis": "Mamalia",
-      "image": "assets/images/kuta.jpg",
+      "image": "assets/images/orang_utan.jpg",
       "gallery": [
         "assets/images/kuta1.jpg",
         "assets/images/kuta2.jpg",
@@ -43,7 +43,7 @@ class ListFauna extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Destinasi Wisata'),
+        title: const Text('Fauna Indonesia'),
         backgroundColor: Colors.blue,
       ),
       body: SafeArea(
@@ -77,21 +77,28 @@ class ListFauna extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.bottomLeft,
                   height: 200,
-                  margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    image:DecorationImage(
+                    image: DecorationImage(
                       image: AssetImage(faunaData[index]["image"]),
                       fit: BoxFit.cover,
                     ),
                   ),
                   child: Text(
                     faunaData[index]["nama"],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          blurRadius: 10.0,
+                          color: Colors.black,
+                          offset: Offset(3.0, 3.0),
+                        ),
+                      ],
                     ),
                   ),
                 ),

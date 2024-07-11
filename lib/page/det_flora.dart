@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 class DetailFlora extends StatelessWidget {
   final String nama;
   final String desc;
-  final String jenis;
+  final String nama_ilmiah;
   final String image;
   final List<String> gallery;
   
   DetailFlora({
     required this.nama,
     required this.desc,
-    required this.jenis,
+    required this.nama_ilmiah,
     required this.image,
     required this.gallery,
   });
