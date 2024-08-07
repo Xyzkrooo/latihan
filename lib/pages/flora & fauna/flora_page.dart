@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'det_flora.dart';
+import 'package:myapp/pages/flora%20&%20fauna/det_flora.dart';
 
 class ListFlora extends StatelessWidget {
 
@@ -66,7 +66,7 @@ class ListFlora extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => DetailFlora(
                         nama: floraData[index]["nama"],
-                        jenis: floraData[index]["nama_ilmiah"],
+                        nama_ilmiah: floraData[index]["nama_ilmiah"],
                         image: floraData[index]["image"],
                         gallery: floraData[index]["gallery"],
                         desc: floraData[index]["desc"],
